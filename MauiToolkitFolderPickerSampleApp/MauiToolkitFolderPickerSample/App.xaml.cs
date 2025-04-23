@@ -1,15 +1,10 @@
-﻿using ShellNavigation.Pages;
-
-namespace ShellNavigation
+﻿namespace MauiToolkitFolderPickerSample
 {
     public partial class App : Application
     {
         public App()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(AboutPage), typeof(AboutPage));
-            Routing.RegisterRoute("Pages/TestPageinFloder", typeof(TestPageinFolder));
-            
         }
 
         protected override Window CreateWindow(IActivationState? activationState)

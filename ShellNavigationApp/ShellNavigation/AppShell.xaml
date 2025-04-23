@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ShellNavigation"
+    xmlns:Pages="clr-namespace:ShellNavigation.Pages"
     Shell.FlyoutBehavior="Flyout"
     Title="ShellNavigation">
 
@@ -15,6 +16,22 @@
         Title="About"
         ContentTemplate="{DataTemplate local:AboutPage}"
         Route="AboutPage" />
-
+    <ShellContent
+        Title="TestPage"
+        ContentTemplate="{DataTemplate Pages:TestPageinFolder}"
+        Route="TestPageinFolder" />
+    
+    <FlyoutItem Title="Test Section" Route="TestSection">
+        <ShellContent
+        Title="TestPage"
+        ContentTemplate="{DataTemplate Pages:TestPageinFolder}"
+        Route="TestPageinFolder" />
+        
+        <ShellContent
+        Title="About"
+        ContentTemplate="{DataTemplate local:AboutPage}"
+        Route="AboutPage" />
+    </FlyoutItem>
+    
 
 </Shell>

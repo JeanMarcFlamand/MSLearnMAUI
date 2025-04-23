@@ -25,11 +25,18 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
-                x:Name="CounterBtn"
+                x:Name="GotoAbout"
                 Text="GoTo About Page.." 
-                SemanticProperties.Hint="Counts the number of times you click"
+                SemanticProperties.Hint="Navigate to about page on click"
                 Clicked="OnGoToAboutPageClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="GotoTestPAgeInFolder"
+                Text="GoTo Test Page In Located n Folder Pages.." 
+                SemanticProperties.Hint="Navigate to Test Pages in Floder Pages"
+                Clicked="GotoTestPageInFolderClicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
 
